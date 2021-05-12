@@ -3,19 +3,6 @@
     margin: 0;
 }
 
-/* #root {
-    display: grid;
-} */
-
-#about-pic {
-    height: 200px;
-    width: auto;
-    border-radius: 20%;
-}
-
-
-
-
 /* background */
 body {
 	background: linear-gradient(-45deg, #53354a, #2b2e4a, #903749, #53354a);
@@ -33,4 +20,57 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+/* About page */
+#about-pic {
+    height: 200px;
+    width: auto;
+    border-radius: 20%;
+}
+
+/* welcome component */
+
+.welcome {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.welcome h3 {
+    margin: 0;
+    color: #f2edd7;
+    border-right: 3px solid #f2edd7;
+    animation: typing 15s infinite, caret 0.7s infinite step-end;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes caret {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #f2edd7;
+    }
+}
+
+@keyframes typing {
+    0%{
+        width: 0ch;
+    }
+    30%{
+        width: 21ch;
+    }
+    80% {
+        width: 21ch;
+    }
+    90% {
+        width: 0ch;
+    }
+    100% {
+        width: 0ch;
+    }
 }
